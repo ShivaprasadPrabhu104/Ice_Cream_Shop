@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Enquiry Confirmation</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Thank you for the Enquiry {{enquiry.first_name}}!</h1>
+        <p> We have recieved your enquiry about the following product:</p>
+        <div class="product-details">
+            <h2>{{product.name}}</h2>
+            <p><strong>{{enquiry.product.brand}}</strong></p>
+            <p><strong>{{enquiry.product.category}}</strong></p>
+            <p><strong>{{enquiry.product.price}}</strong></p>
+        </div>
+        <p>Our team will review your enquiry and get back to you as soon as possible. If you have any further questions, feel free to reply to this email</p>
+        <p>Thank you for choosing our service</p>
+    </div>
+    <div class="footer">
+        <p>Best regards,<br>Ice Cream Shop</p>
+        <p><a href="mailto:support@example.com">mailto:support@example.com</a></p>
+    </div>
+</body>
+</html>
