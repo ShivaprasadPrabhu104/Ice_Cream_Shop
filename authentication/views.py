@@ -52,7 +52,6 @@ def logout_view(request):
     logout(request)
     # Redirect to a specified page after logout, such as the home page
     return redirect('home')  # Replace 'home' with the name of your home view
-
 @login_required(login_url='login')
 def profile_view(request):
     return render(request, "profile.html")

@@ -92,10 +92,9 @@ def contact(request):
             return redirect('contact')
         
     return render(request, "contact.html")
-
 def confirm_enquiry_email(instance):
     subject = 'Your Product Enquiry Confirmation'
-    from_email = 'vinod@example.com'
+    from_email = 'shivaprasadprabhu583@gmail.com'
     to = instance.email
 
     # Render the HTML email template
